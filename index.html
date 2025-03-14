@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Central Hillcrest Student Maintenance Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="prince.css">
+</head>
+<body>
+    <nav class="navbar" ba>
+        <div class="container">
+            <img src="cc.png" alt="Campus Central">
+            <a class="navbar-brand" href="#"><b>Campus Central Hatfield</b> Maintenance Report <br><b>Pretoria</b></a>
+            <h5>LIVE YOUR BEST STUDENT LIFE <font color="dodgerblue">#CENTRALITELIVING</font></h5>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h3 class="mb-0">Report Maintenance Issue</h3>
+            </div>
+            <div class="card-body">
+                <form action="https://formspree.io/f/mzzezpee" method="POST">
+                    <div class="mb-3">
+                        <label for="student_name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="student_name" name="student_name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="room_number" class="form-label">Room/Unit Number</label>
+                        <input type="text" class="form-control" id="room_number" name="room_number" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="issue_type" class="form-label">Issue Type</label>
+                        <select class="form-select" id="issue_type" name="issue_type" required>
+                            <option value="">Select an issue type...</option>
+                            <option value="Plumbing">Plumbing</option>
+                            <option value="Electrical">Electrical</option>
+                            <option value="Furniture">Furniture</option>
+                            <option value="Appliance">Appliance</option>
+                            <option value="Structural">Structural</option>
+                            <option value="Cleaning">Cleaning</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description of the Issue</label>
+                        <textarea class="form-control" id="description" name="description" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit Report</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p style="text-align: center">&copy; 2025 Campus Central. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
